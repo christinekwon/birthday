@@ -1,0 +1,39 @@
+:root {
+	--c-pink-light: #ffe2e2;
+}
+
+body {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-weight: 400;
+	color: red;
+}
+
+.gallery {
+	display: flex;
+	// width: 50%;
+	overflow-x: auto;
+	padding-bottom: 8px;
+
+	&::-webkit-scrollbar {
+		height: 4px;
+	}
+
+	&::-webkit-scrollbar-track {
+		height: 1px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 2px;
+		background-color: red;
+	}
+
+	&__item {
+		width: 100%;
+		aspect-ratio: 1;
+		object-fit: cover;
+	}
+
+	@media screen and (max-width: 600px) {
+		width: 100%;
+	}
+}

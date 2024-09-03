@@ -25,8 +25,10 @@ body {
 	}
 
 	&__item {
-		width: 100%;
+		flex: 0 0 100%;
 		aspect-ratio: 1;
 		object-fit: cover;
+		object-fit: cover;
+		overflow: hidden;
 	}
 }

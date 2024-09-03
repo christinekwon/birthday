@@ -1,1 +1,37 @@
-/*# sourceMappingURL=styles.css.map */
+:root {
+  --c-pink-light: #ffe2e2;
+}
+
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  color: red;
+}
+
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+.gallery::-webkit-scrollbar {
+  height: 40px;
+}
+.gallery::-webkit-scrollbar-track {
+  height: 10px;
+}
+.gallery::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  height: 40px;
+  background-color: red;
+}
+.gallery__item {
+  width: 100%;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 600px) {
+  .gallery {
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */

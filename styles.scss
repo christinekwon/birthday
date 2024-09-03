@@ -4,26 +4,23 @@
 
 body {
 	font-family: 'Helvetica', 'Arial', sans-serif;
-	font-weight: 400;
 	color: red;
 }
 
 .gallery {
 	display: flex;
-	// width: 50%;
 	overflow-x: auto;
-	padding-bottom: 8px;
+	padding-bottom: 10px;
+	width: 100%;
 
 	&::-webkit-scrollbar {
-		height: 4px;
-	}
-
-	&::-webkit-scrollbar-track {
-		height: 1px;
+		height: 10px;
+		width: 100%;
 	}
 
 	&::-webkit-scrollbar-thumb {
-		border-radius: 2px;
+		border-radius: 5px;
+		height: 10px;
 		background-color: red;
 	}
 
@@ -31,9 +28,5 @@ body {
 		width: 100%;
 		aspect-ratio: 1;
 		object-fit: cover;
-	}
-
-	@media screen and (max-width: 600px) {
-		width: 100%;
 	}
 }
